@@ -1,0 +1,27 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="generoActivo" class="nav-tabs">
+    <li [ngbNavItem]="genres?.id" *ngFor="let genres of genreList;">
+        <a ngbNavLink>{{ genres?.name }}</a>
+        <ng-template ngbNavContent>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-3" *ngFor="let cCard of comicCardList;">
+                        
+                        <div class="row" *ngIf="cCard?.genre == genres?.id">
+                            <a [routerLink]="['/', 'comic', cCard?.link]"
+                            popoverTitle="{{cCard?.name}}" ngbPopover="{{cCard?.subtitle}}"
+                            triggers="mouseenter:mouseleave" class="cardGroup">
+                                <img [src]="cCard?.thumb" class="cardGroupImage">
+                                <h6 class="cardGroupRating">{{cCard.likes}}</h6>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </ng-template>
+    </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>

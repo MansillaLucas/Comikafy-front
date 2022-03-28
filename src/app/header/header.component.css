@@ -1,0 +1,45 @@
+.toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #33156d;
+    color: white;
+    font-weight: 600;
+    z-index: 10;
+}
+
+.toolbar img {
+    height: 40px;
+    margin: 0 20px;
+}
+
+.buttonMenuBig{
+    display: flex;
+    margin-right: 10px;
+}
+.buttonMenuSmall{
+    display: none;
+}
+
+.spacer {flex: 1;}
+
+@media all and (max-width: 480px) {
+
+    .toolbar img {
+        height: 30px;
+        margin-left: 10px;
+    }
+
+    .buttonMenuBig{
+        display: none;
+    }
+    .buttonMenuSmall{
+        display: flex;
+        margin-right: 10px;
+    }
+
+}

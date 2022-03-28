@@ -1,0 +1,15 @@
+<ngb-carousel *ngIf="comicsBanner">
+    <ng-template *ngFor="let comicB of comicsBanner; index as i" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="comicB?.imageFront" class="frontCharacterBanner">
+        <span>
+          <img [src]="comicB?.imageBanner" class="w-100 bannerMove">
+        </span>
+        <img [src]="comicB?.imageBanner" class="w-100 backgroundBanner">
+      </div>
+      <div class="carousel-caption">
+        <h1>{{ comicB?.name }}</h1>
+        <h3>{{ comicB?.subtitle }}</h3>
+      </div>
+    </ng-template>
+</ngb-carousel>

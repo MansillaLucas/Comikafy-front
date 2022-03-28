@@ -1,0 +1,27 @@
+.cardGroup{
+    border-radius: 25px;
+    border: 2px solid #33156d;
+    width: 200px;
+    height: 200px; 
+    padding-left: 0%;
+    padding-bottom: 0%;
+    left: 0px !important;
+    bottom: 0px !important;
+    z-index: 1;
+}
+
+.cardGroupImage{
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+    height: 125px;
+    width: 194px;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+.cardGroupRating{
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: #33156d;
+}

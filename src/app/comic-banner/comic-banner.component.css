@@ -1,0 +1,89 @@
+/* BLOQUES */
+
+.picsum-img-wrapper{
+    height: 450px;
+    width: 100%;
+}
+
+.carousel-caption{
+    -webkit-text-stroke: 1.5px black;
+    bottom: 10%;
+    text-align: right;
+    right: 10%;
+    z-index: 2;
+}
+
+/* IMAGENES */
+.bannerMove{
+    top: 0;
+    left: 0;
+    position: relative;
+    animation: movingAnimation 10s infinite
+}
+
+.backgroundBanner{
+    top: 0;
+    left: 0;
+    position:absolute;
+    z-index: -1;
+    transform: translate(0px,0px) scale(2);
+}
+
+@keyframes movingAnimation{
+
+    0%{transform: translate(0px,0px) scale(2); opacity: 1;}
+    60%{transform:translate(0px,225px) scale(2); opacity: 1;}
+    80%{transform:translate(0px,225px) scale(2); opacity: 1;}
+    100%{transform:translate(0px,225px) scale(2); opacity: 0;}
+}
+
+.frontCharacterBanner{
+    position: absolute;
+    z-index: 1;
+}
+
+@media only screen and (max-width:600px) {
+    /* BLOQUES */
+
+    .picsum-img-wrapper{
+        height: 200px;
+        width: 100%;
+    }
+
+    .carousel-caption{
+        -webkit-text-stroke: 0px black;
+        top: 10;
+        text-align: left;
+        left: 10;
+        z-index: 2;
+        font-size:xx-small !important;
+    }
+
+    /* IMAGENES */
+    .bannerMove{
+        top: 0;
+        left: 0;
+        position: relative;
+        animation: movingAnimation 10s infinite
+    }
+
+    .backgroundBanner{
+        top: 0;
+        left: 0;
+        position:absolute;
+        z-index: -1;
+        transform: translate(0px,0px) scale(2);
+    }
+
+    @keyframes movingAnimation{
+
+        0%{transform: translate(0px,0px) scale(2); opacity: 1;}
+        60%{transform:translate(0px,50px) scale(2); opacity: 1;}
+        80%{transform:translate(0px,50px) scale(2); opacity: 1;}
+        100%{transform:translate(0px,50px) scale(2); opacity: 0;}
+    }
+
+    .frontCharacterBanner{
+        display: none;
+    }
+}
