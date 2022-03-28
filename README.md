@@ -1,27 +1,6 @@
-# Front
+# Comikafy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+Comikafy es una página donde cualquier creador de contenido puede subir su cómic, tira o manga sin ningún tipo de restricción. Los usuarios van a poder subir cualquier tipo de cómic asignándole una categoría, y una serie de etiquetas para que los usuarios puedan buscarlo con más facilidad. Ofrece una interfaz de fácil navegación y comprensión, con un buen atractivo visual, que le proporciona al usuario la capacidad de navegar y encontrar el cómic que se adapte mejor a su medida.
+Los cómics incluídos dentro de la página son cómics creados por escritores, dibujantes y mangakas conocidos; siendo la prioridad principal reemplazar estas tiras por las que los usuarios puedan incluir.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+El proyecto tiene como objetivo mostrar una página creada con el entorno Angular en su versión 13.
