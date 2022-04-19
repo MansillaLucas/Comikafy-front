@@ -3,7 +3,10 @@
 <div class="contentFull" role="main">
 
   <app-comic-banner></app-comic-banner>
-  <app-comic-card></app-comic-card>
+  <div class="blankSpace"></div>
+  <div *ngFor="let genre of genreList;">
+    <app-comic-section [categoryInfo]="genre" [comicCardList]="comicCardList"></app-comic-section>
+  </div>
 
 </div>
 

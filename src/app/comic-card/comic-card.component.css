@@ -1,27 +1,24 @@
-.cardGroup{
-    border-radius: 25px;
-    border: 2px solid #33156d;
-    width: 200px;
-    height: 200px; 
-    padding-left: 0%;
-    padding-bottom: 0%;
-    left: 0px !important;
-    bottom: 0px !important;
-    z-index: 1;
+.nav-link.active {
+    font-weight: bold;
+    color: yellow;
+    background-color: #33156d;
+    border-radius: 5px;
 }
 
-.cardGroupImage{
-    margin-top: 1px;
-    margin-left: 1px;
-    margin-right: 1px;
-    height: 125px;
-    width: 194px;
-    border-radius: 25px;
-    z-index: -1;
-}
-
-.cardGroupRating{
-    margin-left: 10px;
-    margin-bottom: 0px;
+.nav-link {
     color: #33156d;
+}
+
+.containerSelection{
+    padding-right: 10px;
+
+}
+
+.colorButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #33156d;
+    font-weight: bold;
+    color: yellow;
 }

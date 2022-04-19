@@ -8,8 +8,10 @@
         <img [src]="comicB?.imageBanner" class="w-100 backgroundBanner">
       </div>
       <div class="carousel-caption">
-        <h1>{{ comicB?.name }}</h1>
-        <h3>{{ comicB?.subtitle }}</h3>
+        <div class="parallelogramText">
+          <h1>{{ comicB?.name }}</h1>
+        </div>
+          <h3>{{ comicB?.subtitle }}</h3>
       </div>
     </ng-template>
 </ngb-carousel>

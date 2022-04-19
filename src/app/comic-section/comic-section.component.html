@@ -1,0 +1,20 @@
+<h4 class="titleCategory">{{ categoryInfo?.name }}</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-2" *ngFor="let cCard of comicCardList;">
+            
+        <div class="row" *ngIf="cCard?.genre == categoryInfo?.id">
+            <app-card-page [cCardInfo]="cCard" [genreInfo]="categoryInfo"></app-card-page>
+        </div>
+
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-end">
+      <div class="col-3 offset-9">
+        <a class="readMoreCategoryText" [routerLink]="['/', 'category#' + categoryInfo?.id]"><b>Ver más de {{ categoryInfo?.name }} <i-bs name="chevron-double-right" width="12" height="12"></i-bs></b></a>
+      </div>
+    </div>
+</div>
+<hr>
+<br>

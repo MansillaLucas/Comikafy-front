@@ -4,8 +4,17 @@
       src="/assets/images/logo.png"
     />
     <div class="spacer"></div>
-    <div class="buttonMenuBig">
+    <div>
+      <div class="btn-group me-3">
+        <button type="button" class="btn btn-warning">Profile</button>
+        <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+          <button class="btn btn-warning dropdown-toggle-split" ngbDropdownToggle></button>
+          <div class="dropdown-menu" ngbDropdownMenu>
+            <button ngbDropdownItem>Library</button>
+            <button ngbDropdownItem>Settings</button>
+            <button ngbDropdownItem>Logout</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="buttonMenuSmall">
-    </div>
-  </div>
+</div>

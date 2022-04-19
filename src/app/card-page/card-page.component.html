@@ -1,0 +1,22 @@
+<div class="rectangleCard">
+    <img [src]="cCardInfo?.thumb" class="rectangleImg">
+    <div class="rectangleBackground">
+
+        <div [style.--color]="genreInfo?.color" class="titleCard">
+            <p class="smallText">{{ cCardInfo?.author }}</p>
+            <b class="mediumText">{{ cCardInfo?.name }}</b>
+        </div>
+        <div [style.--color]="genreInfo?.color" class="contentCard">
+            <p class="smallText">{{ cCardInfo?.subtitle }}</p>
+        </div>
+        <div [style.--color]="genreInfo?.color" class="bottomCard">
+            <p class="smallText" style="margin: 5px;">
+                <i-bs name="check-circle-fill" width="12" height="12" style="margin-right: 3px;"></i-bs>
+                <b>{{ cCardInfo?.likes }}</b>
+                |
+                {{ genreInfo?.name }}
+            </p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.readMoreCategoryText{
+    align-content: flex-end;
+    color:dimgray
+}
+
+.titleCategory{
+    color: dimgray;
+    text-align: left;
+    font-family: 'russo_oneregular';
+}
+
+hr{
+    margin-bottom: 5px;
+}
+
+br{
+    margin-bottom: 5px;
+}

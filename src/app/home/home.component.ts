@@ -8,11 +8,25 @@ import { RestService } from '../rest.service';
 })
 export class HomeComponent implements OnInit {
 
-	constructor(private restService: RestService) {
-	}
+  genreList:any = [];
+  comicCardList:any = [];
+  generoActivo = 1;
 
-	ngOnInit() {
-    //this.cargarData();
+  constructor(private restService: RestService) { }
+
+  ngOnInit(): void {
+    this.cargarData();
+  }
+
+  public cargarData(){
+    this.restService.get('http://localhost:4200/api/genres')
+    .subscribe(respuesta => {
+      this.genreList = respuesta;
+    });
+    this.restService.get('http://localhost:4200/api/cardGroupList')
+    .subscribe(respuesta => {
+      this.comicCardList = respuesta;
+    });
   }
 
 }

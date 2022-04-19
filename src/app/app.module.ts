@@ -11,8 +11,19 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ComicBannerComponent } from './comic-banner/comic-banner.component';
 import { ComicCardComponent } from './comic-card/comic-card.component';
+import { NewsCardComponent } from './news-card/news-card.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
+import { chevronDoubleRight, checkCircleFill } from 'ngx-bootstrap-icons';
+import { CardPageComponent } from './card-page/card-page.component';
+import { ComicSectionComponent } from './comic-section/comic-section.component';
+
+// Select some icons (use an object, not an array)
+const icons = {
+  chevronDoubleRight,
+  checkCircleFill
+};
 
 @NgModule({
   declarations: [
@@ -21,14 +32,18 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HeaderComponent,
     FooterComponent,
     ComicBannerComponent,
-    ComicCardComponent
+    ComicCardComponent,
+    NewsCardComponent,
+    CardPageComponent,
+    ComicSectionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
+    NgxBootstrapIconsModule.pick(icons)
   ],
   providers: [],
   bootstrap: [AppComponent]
