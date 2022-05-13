@@ -1,10 +1,31 @@
+.categoryBackgroundIndividual{
+    background-color: whitesmoke;
+    padding: 10px 15px;
+    border-left: 5px solid var(--color);
+}
+
 .readMoreCategoryText{
-    align-content: flex-end;
-    color:dimgray
+    text-align: center;
+    background-color: whitesmoke;
+    color: dimgray;
+    border-color: rgba(245, 245, 245, 0);
+    font-family: 'russo_oneregular';
+    transform: skew(-20deg);
+    width: 80%;
+    transition: 0.3s;
+}
+
+.readMoreCategoryText:hover{
+    background-color: var(--color);
+    color: white;
+    border-color: var(--color);
 }
 
 .titleCategory{
-    color: dimgray;
+    display:inline-block;
+    color: white;
+    -webkit-text-stroke: 1px var(--color);
+    text-shadow: -1px 1px 0px var(--color);
     text-align: left;
     font-family: 'russo_oneregular';
 }
@@ -14,5 +35,5 @@ hr{
 }
 
 br{
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }

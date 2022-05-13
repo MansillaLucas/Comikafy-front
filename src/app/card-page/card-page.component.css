@@ -40,6 +40,10 @@
 }
 
 .mediumText{
+    font-size: 10px;
+}
+
+.largeText{
     font-size: 12px;
 }
 

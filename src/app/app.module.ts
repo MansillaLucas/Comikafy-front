@@ -15,14 +15,24 @@ import { NewsCardComponent } from './news-card/news-card.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
-import { chevronDoubleRight, checkCircleFill } from 'ngx-bootstrap-icons';
+import { chevronDoubleRight, checkCircleFill, power,
+  gearFill, boxes, cloudArrowUpFill, heartFill,
+  bookmarkCheckFill, newspaper } from 'ngx-bootstrap-icons';
 import { CardPageComponent } from './card-page/card-page.component';
 import { ComicSectionComponent } from './comic-section/comic-section.component';
+import { CategoryBannerComponent } from './category-banner/category-banner.component';
 
 // Select some icons (use an object, not an array)
 const icons = {
   chevronDoubleRight,
-  checkCircleFill
+  checkCircleFill,
+  power,
+  gearFill,
+  boxes,
+  cloudArrowUpFill,
+  heartFill,
+  bookmarkCheckFill,
+  newspaper
 };
 
 @NgModule({
@@ -35,7 +45,8 @@ const icons = {
     ComicCardComponent,
     NewsCardComponent,
     CardPageComponent,
-    ComicSectionComponent
+    ComicSectionComponent,
+    CategoryBannerComponent
   ],
   imports: [
     BrowserModule,

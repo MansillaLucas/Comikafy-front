@@ -1,0 +1,81 @@
+.categoryBackgroundGroup{
+    background-color: whitesmoke;
+    padding: 20px 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.filterBackgroundPurple{
+    background-color: #33156d;
+}
+
+.filterBackgroundYellow{
+    background-color: #dad600;
+}
+
+.tintImagePurple{
+    transition: 0.3s;
+    -webkit-filter: grayscale(1) contrast(1.5) brightness(0.8);
+    filter: grayscale(1) contrast(1.5) brightness(0.8);
+    mix-blend-mode: screen;
+}
+
+.tintImageYellow{
+    transition: 0.3s;
+    -webkit-filter: grayscale(1) brightness(1.5) contrast(0.5);
+    filter: grayscale(1) brightness(1.5) contrast(0.5);
+    mix-blend-mode: multiply;
+}
+
+.tintImage:hover{
+    -webkit-filter:none;
+    filter: none;
+    mix-blend-mode: normal;
+}
+
+.banFrame{
+    border: solid 3px black;
+}
+
+.paddingFrame{
+    padding: 7px;
+}
+
+.featuredComics{
+    border: solid 3px black;
+}
+
+.firstBanner{
+    width: 100%;
+}
+
+.textBanner{
+    -webkit-text-stroke: 1px black;
+    border: solid 3px black;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 20px;
+    padding: 0px 5px;
+    transform: skew(-20deg);
+    font-family: 'russo_oneregular';
+    color: white;
+    z-index: 1;
+}
+
+.secondBanner{
+    width: 100%;
+}
+
+.thirdBanner{
+    width: 100%;
+    height: 350px;
+}
+
+.fourthBanner{
+    width: 100%;
+}
+
+.fifthBanner{
+    height: 100%;
+    width: 100%;
+}

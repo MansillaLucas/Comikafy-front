@@ -19,6 +19,7 @@
     display:inline-block;
     transform: skew(-20deg);
 	background-color: #33156d;
+    padding: 0px 10px;
 }
 
 /* IMAGENES */

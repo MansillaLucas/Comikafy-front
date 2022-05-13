@@ -1,0 +1,45 @@
+<div class="container categoryBackgroundGroup">
+    <div class="row">
+        <div class="col">
+            <h5 class="textBanner" style="background-color: #d2d200;">Monthly recommended</h5>
+            <img class="firstBanner banFrame" alt="Site Logo" src="/assets/images/first.png"/>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-2" *ngFor="let cfCard of comicCardFeaturedList;">
+            <app-card-page [cCardInfo]="cfCard" [genreInfo]="categoryInfo"></app-card-page>
+        </div>
+    </div> -->
+    <div class="row paddingFrame">
+        <div class="col-8 paddingFrame">
+            <div class="row">
+                    <div class="col">
+                        <a [routerLink]="['/', 'collection']">
+                            <h5 class="textBanner" style="background-color: #005bd0;">Collection</h5>
+                            <div class="filterBackgroundYellow banFrame"><img class="secondBanner tintImageYellow tintImage" alt="Site Logo" src="/assets/images/second.png"/></div>
+                        </a>
+                    </div>
+            </div>
+            <div class="row paddingFrame">
+                <div class="col-9 paddingFrame">
+                    <a [routerLink]="['/', 'news']">
+                        <h5 class="textBanner" style="background-color:#aa0000">News</h5>
+                        <div class="filterBackgroundPurple banFrame"><img class="fourthBanner tintImagePurple tintImage" alt="Site Logo" src="/assets/images/fourth.png"/></div>
+                    </a>
+                </div>
+                <div class="col-3 paddingFrame">
+                    <a [routerLink]="['/', 'forums']">
+                        <h5 class="textBanner" style="background-color:#8e00d0">Forums</h5>
+                        <div class="filterBackgroundYellow banFrame"><img class="fifthBanner tintImageYellow tintImage" alt="Site Logo" src="/assets/images/fifth.png"/></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 paddingFrame">
+            <a [routerLink]="['/', 'publish']">
+                <h5 class="textBanner" style="background-color:#00aa33">Creation</h5>
+                <div class="filterBackgroundPurple banFrame"><img class="thirdBanner tintImagePurple tintImage" alt="Site Logo" src="/assets/images/third.png"/></div>
+            </a>
+        </div>
+    </div>
+</div>
