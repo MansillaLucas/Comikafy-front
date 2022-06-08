@@ -1,6 +1,8 @@
 <div class="categoryBackgroundIndividual" [style.--color]="categoryInfo?.color">
-  <h4 class="titleCategory">{{ categoryInfo?.name }}</h4>
-  <div class="container">
+  <div class="titleCategory"><h4>{{ categoryInfo?.name }}</h4></div>
+  <div class="titleBorderLine"></div>
+
+    <div class="container">
       <div class="row">
           <div class="col-2" *ngFor="let cCard of comicCardList;">
               
@@ -12,9 +14,11 @@
       </div>
       <div class="row justify-content-end">
         <div class="col-2 offset-10">
-          <a [routerLink]="['/', 'category#' + categoryInfo?.id]"><div class="readMoreCategoryText">See more <b><i-bs name="chevron-double-right" height="12px" width="12px"></i-bs>   </b></div></a>
+          <a [routerLink]="['/', 'category']" [queryParams]="{category: categoryInfo?.id}"><div class="readMoreCategoryText">See more <b><i-bs name="chevron-double-right" height="12px" width="12px"></i-bs>   </b></div></a>
         </div>
       </div>
-  </div>
+    </div>
+
+    <hr>
+
 </div>
-<br>

@@ -6,21 +6,26 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 //Creados
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ComicBannerComponent } from './comic-banner/comic-banner.component';
-import { ComicCardComponent } from './comic-card/comic-card.component';
-import { NewsCardComponent } from './news-card/news-card.component';
+
+//Paginas
+import { HomeComponent } from './pages/home/home.component';
+import { NewsComponent } from './pages/news/news.component';
+
+//Componentes
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ComicBannerComponent } from './components/comic-banner/comic-banner.component';
+import { ComicCardComponent } from './components/comic-card/comic-card.component';
+import { CardPageComponent } from './components/card-page/card-page.component';
+import { ComicSectionComponent } from './components/comic-section/comic-section.component';
+import { CategoryBannerComponent } from './components/category-banner/category-banner.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgxBootstrapIconsModule } from 'ngx-bootstrap-icons';
 import { chevronDoubleRight, checkCircleFill, power,
   gearFill, boxes, cloudArrowUpFill, heartFill,
   bookmarkCheckFill, newspaper } from 'ngx-bootstrap-icons';
-import { CardPageComponent } from './card-page/card-page.component';
-import { ComicSectionComponent } from './comic-section/comic-section.component';
-import { CategoryBannerComponent } from './category-banner/category-banner.component';
+
 
 // Select some icons (use an object, not an array)
 const icons = {
@@ -43,10 +48,10 @@ const icons = {
     FooterComponent,
     ComicBannerComponent,
     ComicCardComponent,
-    NewsCardComponent,
     CardPageComponent,
     ComicSectionComponent,
-    CategoryBannerComponent
+    CategoryBannerComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

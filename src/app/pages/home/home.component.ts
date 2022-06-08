@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { RestService } from '../rest.service';
+import { RestService } from '../../rest.service';
 
 @Component({
-  selector: 'app-comic-card',
-  templateUrl: './comic-card.component.html',
-  styleUrls: ['./comic-card.component.css']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class ComicCardComponent implements OnInit {
+export class HomeComponent implements OnInit {
 
   genreList:any = [];
   comicCardList:any = [];

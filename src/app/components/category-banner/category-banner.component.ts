@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CategoryBannerComponent implements OnInit {
   
   categoryInfo:any;
-  @Input() comicCardFeaturedList:any = [];
+  @Input() comicCardCompleteList:any = [];
 
   constructor() {
     this.ngOnInit();
@@ -20,6 +20,7 @@ export class CategoryBannerComponent implements OnInit {
       "id":10,
       "color":"#72A0C1"
     }
+
   }
 
 }

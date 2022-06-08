@@ -4,9 +4,9 @@
 
   <app-comic-banner></app-comic-banner>
   <div class="blankSpace"></div>
-  <app-category-banner [comicCardFeaturedList]="comicCardList"></app-category-banner>
+  <app-category-banner [comicCardCompleteList]="comicCardList"></app-category-banner>
   <div class="blankSpace"></div>
-  <div *ngFor="let genre of genreList;">
+  <div class="fullwidth" *ngFor="let genre of genreList;">
     <app-comic-section [categoryInfo]="genre" [comicCardList]="comicCardList"></app-comic-section>
   </div>
 
